@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using WindowsFormsApp1.ViewModels;
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.Views
 {
-    public partial class MainWindow : Form
+    public partial class TestWindow2 : Form
     {
-        public MainWindow()
+        public TestWindow2()
         {
             InitializeComponent();
 
@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
         }
 
         /// <summary>
-        /// Handler für das Ereignis <see cref="MainWindowViewModel.BeteiligteChanged"/>.
+        /// Handler für das Ereignis <see cref="TestWindowViewModel.BeteiligteChanged"/>.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
         /// </summary>
         /// <remarks>Das sollte aus zwei Ereignissen (<see cref="MainWindow_Load(object, EventArgs)"/> und
         /// <see cref="DataContext_BeteiligteChanged(object, EventArgs)"/>) heraus funktionieren. Tatsächlich 
-        /// funktioniert es nur beim Aufruf aus <see cref="MainWindow.MainWindow_Load(object, EventArgs)"/>.</remarks>
+        /// funktioniert es nur beim Aufruf aus <see cref="TestWindow1.MainWindow_Load(object, EventArgs)"/>.</remarks>
         private void BeteiligteSelectDefaults()
         {
             // Auswahl in der Listbox aufheben
@@ -56,6 +56,6 @@ namespace WindowsFormsApp1
             });
         }
 
-        MainWindowViewModel DataContext { get; } = new MainWindowViewModel();
+        TestWindowViewModel DataContext { get; } = new TestWindowViewModel();
     }
 }

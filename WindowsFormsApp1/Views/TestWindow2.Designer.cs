@@ -1,7 +1,7 @@
 ﻿
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.Views
 {
-    partial class MainWindow
+    partial class TestWindow2
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
             // 
             // mainWindowViewModelBindingSource
             // 
-            this.mainWindowViewModelBindingSource.DataSource = typeof(WindowsFormsApp1.ViewModels.MainWindowViewModel);
+            this.mainWindowViewModelBindingSource.DataSource = typeof(WindowsFormsApp1.ViewModels.TestWindowViewModel);
             // 
             // label1
             // 
@@ -78,7 +78,7 @@ namespace WindowsFormsApp1
             this.nurTatVerdaechtigeCheckBox.Text = "nur Tatverdächtige";
             this.nurTatVerdaechtigeCheckBox.UseVisualStyleBackColor = true;
             // 
-            // MainWindow
+            // TestWindow2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -86,8 +86,8 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.nurTatVerdaechtigeCheckBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.beteiligteListBox);
-            this.Name = "MainWindow";
-            this.Text = "Form1";
+            this.Name = "TestWindow2";
+            this.Text = "LBmVA - Testfenster 2";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.beteiligteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainWindowViewModelBindingSource)).EndInit();
