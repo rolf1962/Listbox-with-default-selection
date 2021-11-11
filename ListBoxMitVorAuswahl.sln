@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{B1C3BB0B-DDE1-470E-882F-22275E5C309F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxMitVorAuswahl", "ListBoxMitVorAuswahl\ListBoxMitVorAuswahl.csproj", "{B1C3BB0B-DDE1-470E-882F-22275E5C309F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,12 @@
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\obj\Debug\ListBoxMitVorAuswahl.csproj.AssemblyReference.cache
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\obj\Debug\WindowsFormsApp1.Views.MainWindow.resources
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\obj\Debug\WindowsFormsApp1.Views.TestWindow2.resources
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\obj\Debug\WindowsFormsApp1.Views.TestWindow1.resources
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\obj\Debug\ListBoxMitVorAuswahl.csproj.GenerateResource.cache
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\obj\Debug\ListBoxMitVorAuswahl.csproj.CoreCompileInputs.cache
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Rolf\Documents\Visual Studio\Projects\ListBoxMitVorAuswahl\ListBoxMitVorAuswahl\obj\Debug\WindowsFormsApp1.pdb
