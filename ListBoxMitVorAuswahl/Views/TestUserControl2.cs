@@ -22,7 +22,7 @@ namespace WindowsFormsApp1.Views
         }
 
         /// <summary>
-        /// Handler für das Ereignis <see cref="TestWindowViewModel.BeteiligteChanged"/>.
+        /// Handler für das Ereignis <see cref="TestViewModel.BeteiligteChanged"/>.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -35,9 +35,10 @@ namespace WindowsFormsApp1.Views
         /// Wählt alle <see cref="PersonListItem.Tatverdaechtig">Tatverdächtigen</see> in 
         /// der <see cref="beteiligteListBox">ListBox Beteiligte</see> aus.
         /// </summary>
-        /// <remarks>Das sollte aus zwei Ereignissen (<see cref="MainWindow_Load(object, EventArgs)"/> und
-        /// <see cref="DataContext_BeteiligteChanged(object, EventArgs)"/>) heraus funktionieren. Tatsächlich 
-        /// funktioniert es nur beim Aufruf aus <see cref="TestUserControl1.MainWindow_Load(object, EventArgs)"/>.</remarks>
+        /// <remarks>Durch die direkte Zuweisung von <see cref="TestViewModel.Beteiligte"/>, 
+        /// anstelle der <see cref="TestUserControl1.beteiligteBindingSource"/>, funktioniert 
+        /// die Vorauswahl in beiden Ereignissen (<see cref="MainWindow_Load(object, EventArgs)"/> und
+        /// <see cref="DataContext_BeteiligteChanged(object, EventArgs)"/>).</remarks>
         private void BeteiligteSelectDefaults()
         {
             // Auswahl in der Listbox aufheben
@@ -57,6 +58,6 @@ namespace WindowsFormsApp1.Views
             });
         }
 
-        TestWindowViewModel DataContext { get; } = new TestWindowViewModel();
+        TestViewModel DataContext { get; } = new TestViewModel();
     }
 }

@@ -21,7 +21,7 @@ namespace WindowsFormsApp1.Views
         }
 
         /// <summary>
-        /// Handler für das Ereignis <see cref="TestWindowViewModel.BeteiligteChanged"/>.
+        /// Handler für das Ereignis <see cref="TestViewModel.BeteiligteChanged"/>.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -56,6 +56,6 @@ namespace WindowsFormsApp1.Views
             });
         }
 
-        TestWindowViewModel DataContext { get; } = new TestWindowViewModel();
+        TestViewModel DataContext { get; } = new TestViewModel();
     }
 }

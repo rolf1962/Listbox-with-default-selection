@@ -34,6 +34,7 @@ namespace WindowsFormsApp1.Views
             this.label1 = new System.Windows.Forms.Label();
             this.nurTatVerdaechtigeCheckBox = new System.Windows.Forms.CheckBox();
             this.mainWindowViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.mainWindowViewModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +69,7 @@ namespace WindowsFormsApp1.Views
             // 
             // mainWindowViewModelBindingSource
             // 
-            this.mainWindowViewModelBindingSource.DataSource = typeof(WindowsFormsApp1.ViewModels.TestWindowViewModel);
+            this.mainWindowViewModelBindingSource.DataSource = typeof(WindowsFormsApp1.ViewModels.TestViewModel);
             // 
             // TestUserControl2
             // 
@@ -79,6 +80,7 @@ namespace WindowsFormsApp1.Views
             this.Controls.Add(this.beteiligteListBox);
             this.Name = "TestUserControl2";
             this.Size = new System.Drawing.Size(325, 125);
+            this.toolTip.SetToolTip(this, "Die Vorauswahl funktioniert bei jeder Aktualisierung der Liste \'Beteiligte\'");
             this.Load += new System.EventHandler(this.MainWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mainWindowViewModelBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -92,6 +94,7 @@ namespace WindowsFormsApp1.Views
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox nurTatVerdaechtigeCheckBox;
         private System.Windows.Forms.BindingSource mainWindowViewModelBindingSource;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }
 

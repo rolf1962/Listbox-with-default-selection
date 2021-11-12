@@ -57,7 +57,7 @@ namespace WindowsFormsApp1.Views
             // 
             // mainWindowViewModelBindingSource
             // 
-            this.mainWindowViewModelBindingSource.DataSource = typeof(WindowsFormsApp1.ViewModels.TestWindowViewModel);
+            this.mainWindowViewModelBindingSource.DataSource = typeof(WindowsFormsApp1.ViewModels.TestViewModel);
             // 
             // label1
             // 

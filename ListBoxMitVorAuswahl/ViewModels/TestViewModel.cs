@@ -6,13 +6,13 @@ using WindowsFormsApp1.DataAccess;
 
 namespace WindowsFormsApp1.ViewModels
 {
-    public class TestWindowViewModel : ViewModelBase
+    public class TestViewModel : ViewModelBase
     {
         private TestContext context = new TestContext();
         private List<PersonListItem> _allePersonen;
         private bool _nurTatVerdaechtige;
 
-        public TestWindowViewModel()
+        public TestViewModel()
         {
             PropertyChanged += MainWindowViewModel_PropertyChanged;
 
