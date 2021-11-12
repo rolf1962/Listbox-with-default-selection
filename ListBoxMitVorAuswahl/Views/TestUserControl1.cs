@@ -5,9 +5,9 @@ using WindowsFormsApp1.ViewModels;
 
 namespace WindowsFormsApp1.Views
 {
-    public partial class TestWindow2 : Form
+    public partial class TestUserControl1 : UserControl
     {
-        public TestWindow2()
+        public TestUserControl1()
         {
             InitializeComponent();
 
@@ -36,7 +36,7 @@ namespace WindowsFormsApp1.Views
         /// </summary>
         /// <remarks>Das sollte aus zwei Ereignissen (<see cref="MainWindow_Load(object, EventArgs)"/> und
         /// <see cref="DataContext_BeteiligteChanged(object, EventArgs)"/>) heraus funktionieren. Tatsächlich 
-        /// funktioniert es nur beim Aufruf aus <see cref="TestWindow1.MainWindow_Load(object, EventArgs)"/>.</remarks>
+        /// funktioniert es nur beim Aufruf aus <see cref="TestUserControl1.MainWindow_Load(object, EventArgs)"/>.</remarks>
         private void BeteiligteSelectDefaults()
         {
             // Auswahl in der Listbox aufheben

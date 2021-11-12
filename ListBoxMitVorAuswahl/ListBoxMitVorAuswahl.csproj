@@ -48,17 +48,17 @@
   <ItemGroup>
     <Compile Include="DataAccess\DataContext.cs" />
     <Compile Include="DataAccess\TestContext.cs" />
-    <Compile Include="Views\TestWindow2.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Views\TestUserControl2.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\TestWindow2.Designer.cs">
-      <DependentUpon>TestWindow2.cs</DependentUpon>
+    <Compile Include="Views\TestUserControl2.Designer.cs">
+      <DependentUpon>TestUserControl2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\TestWindow1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Views\TestUserControl1.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\TestWindow1.Designer.cs">
-      <DependentUpon>TestWindow1.cs</DependentUpon>
+    <Compile Include="Views\TestUserControl1.Designer.cs">
+      <DependentUpon>TestUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Person.cs" />
     <Compile Include="Program.cs" />
@@ -75,11 +75,11 @@
     <EmbeddedResource Include="Views\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\TestWindow2.resx">
-      <DependentUpon>TestWindow2.cs</DependentUpon>
+    <EmbeddedResource Include="Views\TestUserControl2.resx">
+      <DependentUpon>TestUserControl2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\TestWindow1.resx">
-      <DependentUpon>TestWindow1.cs</DependentUpon>
+    <EmbeddedResource Include="Views\TestUserControl1.resx">
+      <DependentUpon>TestUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,7 +90,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="app.config" />
     <None Include="Properties\DataSources\WindowsFormsApp1.ViewModels.MainWindowViewModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

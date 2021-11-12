@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1.Views
 {
-    partial class TestWindow1
+    partial class TestUserControl2
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -31,37 +31,25 @@ namespace WindowsFormsApp1.Views
         {
             this.components = new System.ComponentModel.Container();
             this.beteiligteListBox = new System.Windows.Forms.ListBox();
-            this.beteiligteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mainWindowViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.nurTatVerdaechtigeCheckBox = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.beteiligteBindingSource)).BeginInit();
+            this.mainWindowViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.mainWindowViewModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // beteiligteListBox
             // 
-            this.beteiligteListBox.DataSource = this.beteiligteBindingSource;
             this.beteiligteListBox.FormattingEnabled = true;
-            this.beteiligteListBox.Location = new System.Drawing.Point(12, 40);
+            this.beteiligteListBox.Location = new System.Drawing.Point(3, 25);
             this.beteiligteListBox.Name = "beteiligteListBox";
-            this.beteiligteListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.beteiligteListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.beteiligteListBox.Size = new System.Drawing.Size(320, 95);
             this.beteiligteListBox.TabIndex = 0;
-            // 
-            // beteiligteBindingSource
-            // 
-            this.beteiligteBindingSource.DataMember = "Beteiligte";
-            this.beteiligteBindingSource.DataSource = this.mainWindowViewModelBindingSource;
-            // 
-            // mainWindowViewModelBindingSource
-            // 
-            this.mainWindowViewModelBindingSource.DataSource = typeof(WindowsFormsApp1.ViewModels.TestWindowViewModel);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 21);
+            this.label1.Location = new System.Drawing.Point(0, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 1;
@@ -71,25 +59,27 @@ namespace WindowsFormsApp1.Views
             // 
             this.nurTatVerdaechtigeCheckBox.AutoSize = true;
             this.nurTatVerdaechtigeCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.mainWindowViewModelBindingSource, "NurTatVerdaechtige", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.nurTatVerdaechtigeCheckBox.Location = new System.Drawing.Point(89, 20);
+            this.nurTatVerdaechtigeCheckBox.Location = new System.Drawing.Point(56, 5);
             this.nurTatVerdaechtigeCheckBox.Name = "nurTatVerdaechtigeCheckBox";
             this.nurTatVerdaechtigeCheckBox.Size = new System.Drawing.Size(116, 17);
             this.nurTatVerdaechtigeCheckBox.TabIndex = 2;
             this.nurTatVerdaechtigeCheckBox.Text = "nur Tatverdächtige";
             this.nurTatVerdaechtigeCheckBox.UseVisualStyleBackColor = true;
             // 
-            // TestWindow1
+            // mainWindowViewModelBindingSource
+            // 
+            this.mainWindowViewModelBindingSource.DataSource = typeof(WindowsFormsApp1.ViewModels.TestWindowViewModel);
+            // 
+            // TestUserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 169);
             this.Controls.Add(this.nurTatVerdaechtigeCheckBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.beteiligteListBox);
-            this.Name = "TestWindow1";
-            this.Text = "LBmVA - Testfenster 1";
+            this.Name = "TestUserControl2";
+            this.Size = new System.Drawing.Size(325, 125);
             this.Load += new System.EventHandler(this.MainWindow_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.beteiligteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainWindowViewModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -102,7 +92,6 @@ namespace WindowsFormsApp1.Views
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox nurTatVerdaechtigeCheckBox;
         private System.Windows.Forms.BindingSource mainWindowViewModelBindingSource;
-        private System.Windows.Forms.BindingSource beteiligteBindingSource;
     }
 }
 

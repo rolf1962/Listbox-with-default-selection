@@ -5,14 +5,15 @@ using WindowsFormsApp1.ViewModels;
 
 namespace WindowsFormsApp1.Views
 {
-    public partial class TestWindow1 : Form
+    public partial class TestUserControl2 : UserControl
     {
-        public TestWindow1()
+        public TestUserControl2()
         {
             InitializeComponent();
 
             DataContext.BeteiligteChanged += DataContext_BeteiligteChanged;
             mainWindowViewModelBindingSource.DataSource = DataContext;
+            beteiligteListBox.DataSource = DataContext.Beteiligte;
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
@@ -27,6 +28,8 @@ namespace WindowsFormsApp1.Views
         /// <param name="e"></param>
         private void DataContext_BeteiligteChanged(object sender, EventArgs e)
         {
+            beteiligteListBox.DataSource = null;
+            beteiligteListBox.DataSource = DataContext.Beteiligte;
             BeteiligteSelectDefaults();
         }
 
@@ -36,7 +39,7 @@ namespace WindowsFormsApp1.Views
         /// </summary>
         /// <remarks>Das sollte aus zwei Ereignissen (<see cref="MainWindow_Load(object, EventArgs)"/> und
         /// <see cref="DataContext_BeteiligteChanged(object, EventArgs)"/>) heraus funktionieren. Tatsächlich 
-        /// funktioniert es nur beim Aufruf aus <see cref="TestWindow1.MainWindow_Load(object, EventArgs)"/>.</remarks>
+        /// funktioniert es nur beim Aufruf aus <see cref="TestUserControl1.MainWindow_Load(object, EventArgs)"/>.</remarks>
         private void BeteiligteSelectDefaults()
         {
             // Auswahl in der Listbox aufheben
