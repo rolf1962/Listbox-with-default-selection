@@ -28,8 +28,6 @@ namespace WindowsFormsApp1.Views
         /// <param name="e"></param>
         private void DataContext_BeteiligteChanged(object sender, EventArgs e)
         {
-            beteiligteListBox.DataSource = null;
-            beteiligteListBox.DataSource = DataContext.Beteiligte;
             BeteiligteSelectDefaults();
         }
 

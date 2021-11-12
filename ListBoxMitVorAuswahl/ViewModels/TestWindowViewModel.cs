@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using WindowsFormsApp1.DataAccess;
 
@@ -74,7 +75,7 @@ namespace WindowsFormsApp1.ViewModels
             }
         }
 
-        public List<PersonListItem> Beteiligte { get; } = new List<PersonListItem>();
+        public BindingList<PersonListItem> Beteiligte { get; } = new BindingList<PersonListItem>();
         public List<PersonListItem> TatBeteiligte { get; } = new List<PersonListItem>();
         public List<PersonListItem> TatVerdaechtige { get; } = new List<PersonListItem>();
 
